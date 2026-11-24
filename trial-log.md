@@ -43,7 +43,7 @@ titles. Nothing copied verbatim from any entry.
 
 | Version | Line (chars) | Trial | Result |
 |---|---|---|---|
-| v1 | Airplane mode... (60) | Local run: `node main.ts` with ENTRY_OUTPUT to temp dir, check /output/entry.txt content + char count | TBD — run before bundle |
+| v1 | Airplane mode... (60) | Local run: `ENTRY_OUTPUT=/tmp/pickup-trial/entry.txt node main.ts` (node v24.22.1) | PASS — entry.txt = chosen line exactly, 60 chars, 1–200 gate OK |
 
 ## Bundle / check
 
