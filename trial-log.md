@@ -47,4 +47,16 @@ titles. Nothing copied verbatim from any entry.
 
 ## Bundle / check
 
-TBD — recorded after bundle v1 + check v1.
+- Bundle v1: `six-prog/bundles/u-jolly-fox-32-the-robot-pickup-line-championship-3c177b1b-bundle-v1.tar.gz`,
+  809.544 bytes, sha256 `23c5dfa2ce47db9fa314b0ebe7ed304a265ded21feba2fafc88f2224cfd2435a`.
+  Warning: 0 usage rows attached (subagent rows flush only when the run ends).
+- Check v1 (commit `9e8f9b92d0b298920d755b61fcf1176a5721a7ec`): **13 passed / 1 failed /
+  5 skipped / 5 at submission**. Only failure: `thinking_priced` (0 usage rows).
+  `thinking_reproduces` 100,0% (66/66 lines, main.ts 19 authored lines),
+  `thinking_revised` PASS (main.ts from 2 messages), `thinking_turns` 13.
+- Remote GitHub: `gh repo create` REJECTED at first attempt (GraphQL: created too
+  many repositories, too quickly) — rate limit bergulir; build lokal dilanjutkan,
+  remote tertunda, coba ulang sekali sesudah jeda.
+- thinking_priced: butuh re-bundle koordinator dengan --muse-usage sesudah run
+  builder selesai (rows flush saat run selesai — query muse.db saat run jalan
+  mengembalikan 0 baris, terverifikasi).
